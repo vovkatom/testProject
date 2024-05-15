@@ -42,10 +42,10 @@ const AppRoutes = () => {
           <Route path="auth" element={<AuthPageGoogle />} />
           <Route path="auth/:id" element={<AuthPage />} />
         </Route>
-        {/* <Route element={<PrivateRoute />}> */}
+        <Route element={<PrivateRoute />}>
           <Route path="home" element={<HomePage />} />
           <Route path="home/:boardName" element={<ScreensPage />} />
-        {/* </Route> */}
+        </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
